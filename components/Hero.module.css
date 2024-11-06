@@ -1,0 +1,101 @@
+.main{
+    background-image: linear-gradient(#0F2027,#203A43,#2C5364);
+    width: 100%;
+    height: fit-content;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+.h3{
+    color: #66A5AD;
+    font-size: 30px;
+    font-weight: 400;
+}
+.h1{
+    color: #E8F1F2;
+    font-weight: 900;
+    font-size: 68px;
+}
+.p{
+    color: #A9BDC3;
+}
+.icons{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+.secicons{
+    font-size: 40px;
+    color: #A7C5C6;
+}
+.secicons :hover{
+    color: #86B0B3;
+}
+.priicons{
+    font-size: 20px;
+    margin:0px  5px;
+}
+.buttons{
+    display: flex;
+    margin: 5px 0px;
+    gap: 10px;
+}
+.image{
+    width: 95%;
+    height: auto;
+}
+.left{
+    width: 59%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 5px;
+    margin: 50px 0px;
+}
+.right{
+    margin: 50px 0px;
+    width: 39%;
+}
+
+
+@media screen and (max-width: 950px) {
+    .h3{
+        font-size: 20px;
+    }
+    .h1{
+        font-size: 48px;
+    }
+  }
+
+
+@media screen and (max-width: 680px) {
+    .main{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .left{
+        margin-top: 30px;
+        display: flex;
+        text-align: center;
+        width: 100%;
+    }
+    .buttons{
+        justify-content: center;
+    }
+    .right{
+        margin-top: 25px;
+        margin-bottom: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .icons{
+        justify-content: center;
+    }
+    .image{
+        width: 80%;
+        height: auto;
+    }
+  }

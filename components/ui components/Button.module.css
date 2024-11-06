@@ -1,0 +1,15 @@
+.mutton{
+    background-image: linear-gradient(#243B55,#141E30);
+    color: #FFFFFF;
+    padding: 10px 30px;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.mutton:hover{
+    background-image: linear-gradient(#314965,#192836);
+    color: #FFFFFF; 
+}

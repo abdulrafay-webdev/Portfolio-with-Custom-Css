@@ -1,0 +1,14 @@
+.mutton{
+    border: 2px solid #67C8C7 ;
+    background: transparent;
+    color: #67C8C7;
+    padding: 10px 30px;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.mutton:hover{
+    background-color: #5ABBB9;
+    color: #FFFFFF; 
+}

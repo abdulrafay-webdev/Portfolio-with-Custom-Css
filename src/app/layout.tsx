@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Montserrat } from '@next/font/google';
 import "./globals.css";
+import Footer from "../../components/Footer";
+import Navbar from "../../components/Navbar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -11,6 +14,11 @@ const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
+});
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['300', '400', '700','900'],
 });
 
 export const metadata: Metadata = {
@@ -25,8 +33,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${geistSans.variable}  ${geistMono.variable} ${montserrat.className}`}>
+        <div style={{
+        position:'fixed',
+        width:'100%'
+        }}>
+        <Navbar/>
+        </div>
         {children}
+        <Footer/>
       </body>
     </html>
   );
