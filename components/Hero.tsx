@@ -6,6 +6,7 @@ import { IoIosArrowDropright } from "react-icons/io";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
+import heroimg from "../images/hero sec.png"
 
 export const Hero = () => {
 
@@ -25,7 +26,7 @@ export const Hero = () => {
     <div className={styles.main}>
       {/* left  */}
       <div className={styles.left}>
-        <h3 className={styles.h3}>Hey,It's Me </h3>
+        <h3 className={styles.h3}>Hey,It&apos;s Me </h3>
         <h1 className={styles.h1}>{name}</h1>
         <h3 className={styles.h3}>{designation}</h3>
         <p className={styles.p}>{bio}</p>
@@ -51,7 +52,7 @@ export const Hero = () => {
       <div className={styles.right}>
         <Image
           className={styles.image}
-          src={require("../images/hero sec.png")}
+          src={heroimg}
           alt="webdev"
         />
       </div>

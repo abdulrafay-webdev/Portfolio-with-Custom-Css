@@ -7,7 +7,8 @@ const page = () => {
     <div
       style={{
         backgroundColor: "#1a2b3c",
-        height: "100vh",
+        minHeight: "100vh",
+        
         display: "flex",
         justifyContent: "center",
         alignItems: "center",

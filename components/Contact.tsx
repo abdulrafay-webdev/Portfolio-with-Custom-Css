@@ -12,7 +12,7 @@ const Contact = () => {
         <div className={styles.textContainer}>
           <h1 className={styles.title}>Contact Us</h1>
           <p className={styles.description}>
-            Let's bring your ideas to life. Get in touch and start creating
+            Let&apos;s bring your ideas to life. Get in touch and start creating
             something amazing together!
           </p>
         </div>

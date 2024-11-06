@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./About.module.css";
 import Image from "next/image";
 import Button2 from "./ui components/Button2";
+import profilepic from "../images/rp.jpeg"
 
 const About = () => {
   const shortBio: string =
@@ -12,7 +13,7 @@ const About = () => {
 
   return (
     <>
-      <h1 className={styles.h1}>About Me</h1>
+      <h1 style={{paddingTop:'60px'}} className={styles.h1}>About Me</h1>
       <div className={styles.main}>
         {/* left  */}
         <div className={styles.left}>
@@ -20,7 +21,9 @@ const About = () => {
           <div className={styles.img}>
             <Image
               className={styles.profile}
-              src={require("../images/rp.jpeg")}
+              src={profilepic}
+              width={500}
+              height={500}
               alt="profile pic"
             />
           </div>

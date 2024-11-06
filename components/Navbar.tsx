@@ -1,13 +1,18 @@
 "use client"
 
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
+
+  console.log(isOpen);
+  
 
   return (
     <div>
@@ -37,15 +42,15 @@ function Navbar() {
           textAlign:'center'
         }}
       >
-        <a href="/" style={linkStyle}>
+        <Link href="/" style={linkStyle}>
           Home
-        </a>
-        <a href="/about" style={linkStyle}>
+        </Link>
+        <Link href="/about" style={linkStyle}>
           About
-        </a>
-        <a href="/contact" style={linkStyle}>
+        </Link>
+        <Link href="/contact" style={linkStyle}>
           Contact
-        </a>
+        </Link>
       </div>
     </nav>
     </div>
