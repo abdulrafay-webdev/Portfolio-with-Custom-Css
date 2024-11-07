@@ -4,9 +4,11 @@
 
 {
   "extends": [
+    "next/core-web-vitals", "next/typescript",
     "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
-    "@typescript-eslint/no-explicit-any": "off"  // Disable the rule for using `any`
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unused-expressions": "off"
   }
 }

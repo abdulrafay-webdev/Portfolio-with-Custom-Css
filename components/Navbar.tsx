@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Link from 'next/link';
 import React, { useState } from 'react';
@@ -12,6 +12,7 @@ function Navbar() {
   };
 
   console.log(isOpen);
+  console.log(toggleNavbar);
   
 
   return (
@@ -50,6 +51,9 @@ function Navbar() {
         </Link>
         <Link href="/contact" style={linkStyle}>
           Contact
+        </Link>
+        <Link href="/projects" style={linkStyle}>
+          Projects
         </Link>
       </div>
     </nav>

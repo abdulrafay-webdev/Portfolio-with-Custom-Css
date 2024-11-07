@@ -1,7 +1,7 @@
 import React from 'react'
 import Contact from '../../../components/Contact'
 
-const page = () => {
+const Contacts = () => {
   return (
     <div
     style={{
@@ -17,4 +17,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Contacts

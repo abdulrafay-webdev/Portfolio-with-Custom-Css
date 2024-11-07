@@ -2,7 +2,7 @@
 import React from "react";
 import About from "../../../components/About";
 
-const page = () => {
+const Abouts = () => {
   return (
     <div
       style={{
@@ -20,4 +20,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Abouts;
