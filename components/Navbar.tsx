@@ -11,8 +11,7 @@ function Navbar() {
     setIsOpen(!isOpen);
   };
 
-  console.log(isOpen);
-  console.log(toggleNavbar);
+
   
 
   return (
@@ -31,6 +30,7 @@ function Navbar() {
       <div onClick={toggleNavbar} style={{ cursor: 'pointer', display: 'block', fontSize: '24px' }}>
         ☰
       </div>
+      <div>{isOpen}</div>
       <div
         style={{
           display: isOpen ? 'block' : 'none',
