@@ -27,10 +27,10 @@ function Navbar() {
       }}
     >
       <div style={{ fontSize: '24px', fontWeight: 'bold' }}>Creative Portfolio</div>
+      <div>{isOpen}</div>
       <div onClick={toggleNavbar} style={{ cursor: 'pointer', display: 'block', fontSize: '24px' }}>
         ☰
       </div>
-      <div>{isOpen}</div>
       <div
         style={{
           display: isOpen ? 'block' : 'none',
