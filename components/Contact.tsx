@@ -1,10 +1,14 @@
 import React from "react";
 import styles from "./Contact.module.css";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import Button2 from "./ui components/Button2";
+import Link from "next/link";
 const Contact = () => {
-  const Whatsapplink: string = "#";
-  const Linkedinlink: string = "#";
-  const Githublink: string = "#";
+
+    // links 
+    const Whatsapplink:string="https://wa.me/message/6RMRPE5J3PRGL1"
+    const Linkedinlink:string="https://www.linkedin.com/in/abdul-rafay-073187278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    const Githublink:string="https://github.com/abdulrafay-webdev"
 
   return (
     <section className={styles.contactSection}>
@@ -67,7 +71,7 @@ const Contact = () => {
                   />
                 </div>
                 <div className={styles.fieldFull}>
-                  <button className={styles.submitButton}>Send</button>
+                  <Button2 className={styles.submitButton}>Send</Button2>
                 </div>
               </form>
             </div>
@@ -85,15 +89,15 @@ const Contact = () => {
                   +92 313 235 4942
                 </p>
                 <div className={styles.socialIcons}>
-                  <a href={Whatsapplink} className={styles.icon}>
+                  <Link target="blank" href={Whatsapplink} className={styles.icon}>
                     <FaWhatsapp />
-                  </a>
-                  <a href={Linkedinlink} className={styles.icon}>
+                  </Link>
+                  <Link target="blank" href={Linkedinlink} className={styles.icon}>
                     <FaLinkedin />
-                  </a>
-                  <a href={Githublink} className={styles.icon}>
+                  </Link>
+                  <Link target="blank" href={Githublink} className={styles.icon}>
                     <FaGithub />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

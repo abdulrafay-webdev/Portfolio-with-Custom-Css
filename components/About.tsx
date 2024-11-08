@@ -3,6 +3,7 @@ import styles from "./About.module.css";
 import Image from "next/image";
 import Button2 from "./ui components/Button2";
 import profilepic from "../images/rp.jpeg"
+import Link from "next/link";
 
 const About = () => {
   const shortBio: string =
@@ -37,7 +38,9 @@ const About = () => {
         <div className={styles.right}>
           <h1 className={styles.h1}>Skills</h1>
           <p className={styles.p}>{LongBio}</p>
+          <Link href={'/contact'}>
           <Button2>Feel free to reach out</Button2>
+          </Link>
         </div>
       </div>
     </>

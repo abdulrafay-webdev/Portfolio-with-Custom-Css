@@ -17,9 +17,9 @@ export const Hero = () => {
   const bio:string="Creating engaging, user-friendly digital experiences with a focus on modern design and performance"
 
   // links 
-  const WhatsappLink:string="#"
-  const LinkedinLink:string="#"
-  const GithubLink:string="#"
+  const WhatsappLink:string="https://wa.me/message/6RMRPE5J3PRGL1"
+  const LinkedinLink:string="https://www.linkedin.com/in/abdul-rafay-073187278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+  const GithubLink:string="https://github.com/abdulrafay-webdev"
 
 
   return (
@@ -32,20 +32,20 @@ export const Hero = () => {
         <p className={styles.p}>{bio}</p>
         {/* buttons  */}
         <div className={styles.buttons}>
-          <Link href={"#"}>
+          <Link href={"/projects"}>
             <Button>
-              View My Work <IoIosArrowDropright className={styles.priicons} />{" "}
+              View My Work <IoIosArrowDropright className={styles.priicons} />
             </Button>
           </Link>
-          <Link href={"#"}>
+          <Link href={"/contact"}>
             <Button2>Contact Me</Button2>
           </Link>
         </div>
         {/* social media icons  */}
         <div className={styles.icons}>
-          <Link href={WhatsappLink}><FaWhatsapp className={styles.secicons} /></Link>
-          <Link href={LinkedinLink}><FaLinkedin className={styles.secicons} /></Link>
-          <Link href={GithubLink}><FaGithub className={styles.secicons} /></Link>
+          <Link target="blank" href={WhatsappLink}><FaWhatsapp className={styles.secicons} /></Link>
+          <Link target="blank" href={LinkedinLink}><FaLinkedin className={styles.secicons} /></Link>
+          <Link target="blank" href={GithubLink}><FaGithub className={styles.secicons} /></Link>
         </div>
       </div>
       {/* right  */}
